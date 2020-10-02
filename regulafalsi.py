@@ -15,7 +15,7 @@ c=0
 for i in range(num_iter):
     q=c
     c=(b-(f(b)*(a-b)/(f(a)-f(b))))
-    print("Sl.No {:<10} a={:<12} b={:<12} c={:<12} f(c)={:<20} epsa={:<12}".format(i,round(a,round_of),round(b,round_of),round(c,round_of),round((f(c)),round_of),abs(round((q-c)/c*100,round_of))))
+    print("Sl.No {:<10} a={:<12} b={:<12} c={:<12} f(c)={:<20} epsa={:<12}".format(i+1,round(a,round_of),round(b,round_of),round(c,round_of),round((f(c)),round_of),abs(round((q-c)/c*100,round_of))))
     if (f(c))<0:
         a=c
     else:
